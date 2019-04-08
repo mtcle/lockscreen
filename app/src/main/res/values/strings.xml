@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">锁屏</string>
+
+    <string name="DevAdmMsg">需要激活设备管理器才可以使用</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+</resources>
