@@ -1,26 +1,26 @@
 package com.mtcle.lockscreen;
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     private static final int ADMIN_INTENT = 15;
     private static final String description = "一键锁屏 by mtcle";
     private DevicePolicyManager mDevicePolicyManager;
     private ComponentName mComponentName;
 
-    private String TAG = "mtcle ";
+    private static final String TAG = "mtcle ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
